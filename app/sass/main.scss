@@ -33,8 +33,8 @@ body{
 	min-width: 320px;
 	position: relative;
 	line-height: 1.75;
-	font-family: $default-font;
 	overflow-x: hidden;
+	font-family: $sans;
 	opacity: 1;
 }
 .img-responsive{
@@ -45,4 +45,62 @@ body{
 .fs{
 	display: flex;
 }
-@import "media" // Всегда в конце
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: 0 0;
+    border-bottom: 1px #000 solid;
+    color: #fff;
+    z-index: 1000;
+    height: 80px;
+    overflow: hidden;
+    -webkit-transition: height .3s;
+    transition: height .3s;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header.shrink {
+    height: 80px;
+   
+}
+.index-header{
+	background-image: url(../img/index-bg.png);
+	width: 100%;
+	background-position: center;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+.index-header-content{
+	height: 100%;
+}
+.container-header{
+	display: flex;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	    -webkit-justify-content: space-between;
+	            justify-content: space-between;
+}
+.header-logo {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: url(../img/logo-header.png);
+    background-position: center;
+    height: 100%;
+    width: 160px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.mobile-wrap{
+	display: none;
+}
+
+@import "media"; // Всегда в конце

@@ -13,3 +13,11 @@ function getCurrentScroll() {
     return window.pageYOffset || document.documentElement.scrollTop;
     }
 });
+
+$(document).ready(function(){
+  //ALL NAVIGATION MENUS
+  $(".hamburger").click(function(){
+    $(this).toggleClass("is-active");
+    $(".navigation").toggleClass("nav-is-active");
+  });
+});

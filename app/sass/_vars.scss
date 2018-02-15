@@ -1,3 +1,7 @@
 $default-font: "roboto-example", sans-serif;
 $accent: orange;
 $sans: 'Open Sans', sans-serif;
+@font-face {
+    font-family: 'hb';
+    src: url(../fonts/HelB.ttf);
+}

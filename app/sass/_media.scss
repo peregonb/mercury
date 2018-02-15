@@ -6,19 +6,71 @@
 }
 
 @media only screen and (max-width : 992px){
-	
+	ul.header-menu{
+		li{
+			margin: 0 10px;
+		}
+	}
 }
 
 @media only screen and (max-width : 768px){
-	
+	ul.header-menu{
+		display: none;
+	}
+	.mobile-wrap {
+    display: block;
+}
+.header-logo {
+    height: 30px;
+    width: 200px;
+}
+.container-header{
+	width: 100%;
+}
+.hamburger{
+	display: block;
+}
+.header-buttons{
+  padding-right: 30px;
+}
+.index-headline{
+        font-size: 7.5rem * 0.8;
+        line-height: 7.5rem * 0.8;
+      }
+            .index-description{
+max-width: 75vw;
+      }
+            .index-button{
+        font-size: 1.8rem * 0.8;
+      }
 }
 
 @media only screen and (max-width : 480px){
-	
+	.header-buttons{
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.index-headline{
+        font-size: 7.5rem * 0.7;
+        line-height: 7.5rem * 0.7;
+      }
+.index-description {
+    font-size: 1.575rem;
+    line-height: 2rem;
+    width: 100%;
+    max-width: 90%;
+}
+                  .index-button{
+        font-size: 1.8rem * 0.7;
+      }
 }
 
 @media only screen and (max-width : 320px){
-	
+	.index-headline{
+        font-size: 7.5rem * 0.6;
+        line-height: 7.5rem * 0.6;
+      }
+
 }
 
 
